@@ -54,7 +54,14 @@
 .title {
   font-size: 20px;
   margin-top: 20px;
+  margin-left: 20px;
 }
+
+.autora {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 20px;
+} 
 
 .subtitle {
   margin-bottom: 20px;
