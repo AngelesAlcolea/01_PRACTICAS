@@ -15,9 +15,9 @@
 <body>
   <header>
       <nav class="navbar">
-          <a class="link" href="#section1">Acerca de mí</a>
-          <a class="link" href="#section2">Habilidades</a>
-          <a class="link" href="#section3">Contacto</a>
+        <a class="link" href="#section1">Acerca de mí</a>
+        <a class="link" href="#section2">Habilidades</a>
+        <a class="link" href="#section3">Contacto</a>
       </nav>
   </header>
 
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div class="section" id="section3">
-        <form>
+        <form method="get">
           <fieldset class="form1">
             <label>
               Nombre
@@ -108,10 +108,12 @@
           <fieldset class="form3">
             <label class="aboutus">
               Más información
-              <textarea class="aboutarea" placeholder="¿Qué más quieres saber o compartir?"></textarea>
+              <textarea maxlength="180" class="aboutarea" placeholder="¿Qué más quieres saber o compartir?"></textarea>
             </label>
           </fieldset>
-          <input type="submit" value="Enviar">
+          <div class="submitcont">
+            <input class="submit" type="submit" value="Enviar">
+          </div>
         </form>
       </div>
     </div>

@@ -13,6 +13,7 @@
 
 .navbar {
   display: none;
+  z-index: 1;
 }
 
 .link {
@@ -130,7 +131,7 @@ label {
 }
 
 .form1 > label > input {
-  width: 100%;
+  width: 98%;
   margin: 10px 0;
 }
 
@@ -144,16 +145,37 @@ label {
   height: 80px;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
+input {
+  border: 1px solid rgb(162, 160, 160);
 }
 
-.icon {
-  margin: 0 30px;
+.submit {
+  padding: 5px 10px;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.submitcont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.social {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 5%;
+  width: 90%;
+  height: 50px;
 }
 
 .bar {
@@ -162,30 +184,79 @@ label {
   background-color: black;
   border: 1px solid white;
   border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
 }
 
 .progress {
   position: relative;
-  top: 10%;
-  left: 1%;
-  height: 70%;
-  background-color: rgb(50, 109, 210);
+  left: 1.5px;
+  height: 75%;
   border: 1px solid transparent;
   border-radius: 15px;
 }
 
 .pr1 {
-  width: 15%;
+  animation: expand1 3s ease-out infinite;
+  z-index: 0;
 }
 
 .pr2 {
-  width: 35%;
+  animation: expand2 3s ease-out infinite;
+  z-index: 0;
 }
 
 .pr3 {
-  width: 85%;
+  animation: expand3 3s ease-out infinite;
+  z-index: 0;
 }
 
 .pr4 {
-  width: 50%;
+  animation: expand4 3s ease-out infinite;
+  z-index: 0;
+}
+
+@keyframes expand1 {
+  0% {
+    width: 0%;
+    background-color: violet;
+  }
+  100% {
+    width: 80%;
+    background-color: rgb(50, 109, 210);
+  }
+}
+
+@keyframes expand2 {
+  0% {
+    width: 0%;
+    background-color: violet;
+  }
+  100% {
+    width: 60%;
+    background-color: rgb(50, 109, 210);
+  }
+}
+
+@keyframes expand3 {
+  0% {
+    width: 0%;
+    background-color: violet;
+  }
+  100% {
+    width: 50%;
+    background-color: rgb(50, 109, 210);
+  }
+}
+
+@keyframes expand4 {
+  0% {
+    width: 0%;
+    background-color: violet;
+  }
+  100% {
+    width: 80%;
+    background-color: rgb(50, 109, 210);
+  }
 }
